@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="TriDev Solutions: consultoria, criação de sites e soluções digitais para empresas que querem presença profissional e crescimento."
+  >
+  <title>TriDev Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Rajdhani:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="TriDev Solutions">
+        <img src="img/logo.png" alt="Logo TriDev Solutions">
+        <div class="brand-copy">
+          <strong>TRIDEV</strong>
+          <span>SOLUTIONS</span>
+        </div>
+      </a>
+
+      <nav class="menu" aria-label="Navegação principal">
+        <a class="menu-link is-active" href="#inicio">
+          <span class="menu-icon">&#8962;</span>
+          <span class="menu-text">Início</span>
+        </a>
+        <a class="menu-link" href="#servicos">
+          <span class="menu-icon">&#9635;</span>
+          <span class="menu-text">Serviços</span>
+        </a>
+        <a class="menu-link" href="#sobre">
+          <span class="menu-icon">&#9673;</span>
+          <span class="menu-text">Sobre</span>
+        </a>
+        <a class="menu-link" href="#estimativa">
+          <span class="menu-icon">&#9681;</span>
+          <span class="menu-text">Estimativa</span>
+        </a>
+        <a class="menu-link" href="#projetos-preview">
+          <span class="menu-icon">&#10697;</span>
+          <span class="menu-text">Projetos</span>
+        </a>
+        <a class="menu-link" href="#contato">
+          <span class="menu-icon">&#10022;</span>
+          <span class="menu-text">Contato</span>
+        </a>
+      </nav>
+
+      <a class="button button-primary topbar-cta" href="#contato">Solicitar proposta</a>
+    </header>
+
+    <main id="inicio" class="home-stack">
+      <section class="hero panel fade">
+        <div class="hero-copy">
+          <span class="eyebrow">Consultoria e criação de sites</span>
+          <h1>Criamos presença digital com cara profissional para empresas que querem crescer com clareza.</h1>
+          <p>
+            A TriDev Solutions é formada por três sócios que decidiram construir uma empresa de consultoria,
+            criação de sites e páginas comerciais. Nosso foco é transformar ideia em uma presença digital bonita,
+            funcional e preparada para transmitir confiança.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contato">Falar com a TriDev</a>
+            <a class="button button-secondary" href="#servicos">Ver estrutura do site</a>
+          </div>
+        </div>
+
+        <div class="hero-highlights">
+          <div class="highlight-card">
+            <strong>Sites institucionais</strong>
+            <span>Para empresas que precisam se apresentar melhor e passar mais credibilidade.</span>
+          </div>
+          <div class="highlight-card">
+            <strong>Landing pages</strong>
+            <span>Para campanhas, captação de leads, ofertas e comunicação mais objetiva.</span>
+          </div>
+          <div class="highlight-card">
+            <strong>Consultoria digital</strong>
+            <span>Para organizar conteúdo, direcionamento visual e estrutura da presença online.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-section fade" id="servicos">
+        <div class="section-intro panel">
+          <span class="section-tag">Serviços</span>
+          <h2>Uma estrutura mais clara para quem quer colocar a empresa no digital do jeito certo.</h2>
+          <p>
+            Em vez de jogar tudo em uma página sem direção, pensamos no site como uma experiência:
+            proposta clara, seções bem separadas, leitura leve e foco em conversão.
+          </p>
+        </div>
+
+        <div class="services-showcase">
+          <article class="panel service-showcase-card">
+            <div class="service-card-top">
+              <span class="service-icon">WEB</span>
+              <span class="service-chip">01</span>
+            </div>
+            <div class="card-header">
+              <h2>Sites institucionais</h2>
+            </div>
+            <p>
+              Projetos pensados para apresentar marca, serviços, diferenciais e contato com mais presença e organização.
+            </p>
+            <ul class="service-points">
+              <li>Estrutura profissional</li>
+              <li>Mais credibilidade</li>
+              <li>Contato mais claro</li>
+            </ul>
+          </article>
+
+          <article class="panel service-showcase-card service-showcase-card-featured">
+            <div class="service-card-top">
+              <span class="service-icon">LP</span>
+              <span class="service-chip">02</span>
+            </div>
+            <div class="card-header">
+              <h2>Landing pages</h2>
+            </div>
+            <p>
+              Páginas comerciais para campanhas, captação de interesse e apresentação de ofertas com mais foco.
+            </p>
+            <ul class="service-points">
+              <li>Mais objetividade</li>
+              <li>Estrutura para campanhas</li>
+              <li>Visual com impacto</li>
+            </ul>
+          </article>
+
+          <div class="services-side">
+            <article class="panel service-showcase-card">
+              <div class="service-card-top">
+                <span class="service-icon">UX</span>
+                <span class="service-chip">03</span>
+              </div>
+              <div class="card-header">
+                <h2>Consultoria digital</h2>
+              </div>
+              <p>
+                Apoio para estruturar comunicação, organizar conteúdo e decidir o que sua empresa realmente precisa.
+              </p>
+              <ul class="service-points">
+                <li>Direção mais clara</li>
+                <li>Organização de conteúdo</li>
+                <li>Decisão com mais segurança</li>
+              </ul>
+            </article>
+
+            <article class="panel service-support-card">
+              <span class="section-tag">O que entregamos</span>
+              <h3>Mais que uma página bonita: uma estrutura que faz sentido para o seu momento.</h3>
+              <p>
+                A proposta é construir presença digital com estética, clareza e organização, sem exagero e sem improviso.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-section fade" id="sobre">
+        <div class="split-grid">
+          <article class="panel about-card">
+            <div class="card-header">
+              <span class="section-tag">Sobre nós</span>
+              <h2>Estamos no começo da empresa, mas já começamos com intenção e posicionamento.</h2>
+            </div>
+            <p>
+              A TriDev nasceu da união de três amigos que decidiram transformar conhecimento em uma empresa.
+              Ainda estamos construindo nossa história, então preferimos ser honestos: queremos crescer entregando
+              projetos bem feitos, relações de confiança e uma experiência profissional desde o primeiro contato.
+            </p>
+
+            <div class="about-banner">
+              <div>
+                <small>Nosso jeito de construir</small>
+                <strong>Proximidade, clareza e evolução contínua.</strong>
+              </div>
+            </div>
+
+            <div class="founders-grid">
+              <div class="mini-card">
+                <strong>Três sócios</strong>
+                <span>Atendimento mais próximo, decisões mais rápidas e participação real no projeto.</span>
+              </div>
+              <div class="mini-card">
+                <strong>Empresa em construção</strong>
+                <span>Sem promessas exageradas. Com vontade real de fazer bem feito desde o início.</span>
+              </div>
+              <div class="mini-card">
+                <strong>Visão de crescimento</strong>
+                <span>Queremos construir uma base forte junto com empresas que também estão evoluindo.</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel reasons-card">
+            <div class="card-header">
+              <span class="section-tag">Diferenciais</span>
+              <h2>O que faz a TriDev ter uma abordagem diferente.</h2>
+            </div>
+            <div class="reasons-grid">
+              <div class="reason-card">
+                <span class="reason-kicker">01</span>
+                <strong>Estrutura com intenção</strong>
+                <p>Seções, fluxo e apresentação pensados para a leitura parecer mais leve e profissional.</p>
+              </div>
+              <div class="reason-card">
+                <span class="reason-kicker">02</span>
+                <strong>Visual mais premium</strong>
+                <p>Uma linguagem de agência, mas com clareza suficiente para não confundir quem visita.</p>
+              </div>
+              <div class="reason-card">
+                <span class="reason-kicker">03</span>
+                <strong>Contato direto</strong>
+                <p>Quem conversa com a TriDev fala com os próprios fundadores, sem camada desnecessária.</p>
+              </div>
+              <div class="reason-card">
+                <span class="reason-kicker">04</span>
+                <strong>Momento real da empresa</strong>
+                <p>Preferimos construir autoridade com entrega e transparência, não com promessas exageradas.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="home-section fade" id="projetos-preview">
+        <div class="section-intro panel">
+          <span class="section-tag">Projetos</span>
+          <h2>Alguns projetos já publicados para mostrar o estilo de entrega e a variedade das soluções.</h2>
+          <p>
+            Selecionamos três trabalhos já prontos para deixar a vitrine mais real, navegável e com mais
+            credibilidade logo no primeiro contato.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="panel project-placeholder fade">
+            <div class="project-thumb">
+              <img class="project-thumb-image" src="img/seuPizza.png" alt="Preview do projeto SeuPizza">
+              <span class="project-label">Projeto 01</span>
+              <div class="project-thumb-copy">
+                <small>Cardápio digital</small>
+                <strong>SeuPizza</strong>
+              </div>
+            </div>
+            <div class="project-content">
+              <h2>SeuPizza</h2>
+              <p>Site para pizzaria com apelo visual forte, foco em cardápio, promoções e navegação mais direta para o público.</p>
+            </div>
+            <ul class="project-meta">
+              <li>Tipo: Site comercial</li>
+              <li>Escopo: Cardápio + apresentação</li>
+              <li>Status: Publicado</li>
+            </ul>
+            <div class="project-actions">
+              <a class="project-link" href="https://mukamarcondes.github.io/seuPizza/" target="_blank" rel="noreferrer">Ver projeto</a>
+            </div>
+          </article>
+
+          <article class="panel project-placeholder fade">
+            <div class="project-thumb">
+              <img class="project-thumb-image" src="img/gerenciadorAdega.png" alt="Preview do projeto Gerenciador Adega">
+              <span class="project-label">Projeto 02</span>
+              <div class="project-thumb-copy">
+                <small>Sistema de gestão</small>
+                <strong>Gerenciador Adega</strong>
+              </div>
+            </div>
+            <div class="project-content">
+              <h2>Gerenciador Adega</h2>
+              <p>Sistema com foco em operação da loja, controle de caixa, vendas, estoque e relatórios no mesmo painel.</p>
+            </div>
+            <ul class="project-meta">
+              <li>Tipo: Sistema web</li>
+              <li>Escopo: Gestão + operação</li>
+              <li>Status: Publicado</li>
+            </ul>
+            <div class="project-actions">
+              <a class="project-link" href="https://gerenciador-adega.vercel.app/" target="_blank" rel="noreferrer">Ver projeto</a>
+            </div>
+          </article>
+
+          <article class="panel project-placeholder fade">
+            <div class="project-thumb">
+              <img class="project-thumb-image" src="img/gerenciadorNumber.png" alt="Preview do projeto Gerenciador de Números">
+              <span class="project-label">Projeto 03</span>
+              <div class="project-thumb-copy">
+                <small>Ferramenta digital</small>
+                <strong>Gerenciador de Números</strong>
+              </div>
+            </div>
+            <div class="project-content">
+              <h2>Gerenciador de Números</h2>
+              <p>Plataforma com dashboard, auditoria, financeiro e gestão de números, pensada para controle e acompanhamento.</p>
+            </div>
+            <ul class="project-meta">
+              <li>Tipo: Sistema web</li>
+              <li>Escopo: Dashboard + gestão</li>
+              <li>Status: Publicado</li>
+            </ul>
+            <div class="project-actions">
+              <a class="project-link" href="https://mukamarcondes.github.io/gerenciador3/" target="_blank" rel="noreferrer">Ver projeto</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="section-actions">
+          <a class="button button-secondary" href="projetos.html">Abrir página de projetos</a>
+        </div>
+      </section>
+
+      <section class="home-section fade" id="estimativa">
+        <div class="section-intro panel">
+          <span class="section-tag">Estimativa</span>
+          <h2>Descreva o que você precisa e veja uma faixa inicial de investimento.</h2>
+          <p>
+            Esta ferramenta entrega uma média de valor para orientar a conversa. O orçamento final pode variar
+            conforme escopo, integrações, personalização e prazo.
+          </p>
+        </div>
+
+        <div class="estimate-grid">
+          <article class="panel estimate-card">
+            <div class="card-header">
+              <span class="section-tag">Monte sua estimativa</span>
+              <h2>Qual projeto faz mais sentido para o seu momento?</h2>
+            </div>
+
+            <form class="estimate-form" id="estimate-form">
+              <label class="field">
+                <span>Tipo de projeto</span>
+                <select id="estimate-type" name="type">
+                  <option value="site">Site institucional</option>
+                  <option value="landing">Landing page</option>
+                  <option value="sistema">Sistema web</option>
+                </select>
+              </label>
+
+              <label class="field">
+                <span>Quantidade de páginas</span>
+                <select id="estimate-pages" name="pages">
+                  <option value="1">1 página</option>
+                  <option value="3">2 a 3 páginas</option>
+                  <option value="5">4 a 5 páginas</option>
+                  <option value="8">6 ou mais páginas</option>
+                </select>
+              </label>
+
+              <label class="field">
+                <span>Prazo desejado</span>
+                <select id="estimate-deadline" name="deadline">
+                  <option value="normal">Sem urgência</option>
+                  <option value="soon">Quero em até 30 dias</option>
+                  <option value="urgent">Tenho urgência</option>
+                </select>
+              </label>
+
+              <div class="field-group">
+                <label class="checkbox-card">
+                  <input type="checkbox" id="estimate-formulario" name="extras" value="formulario">
+                  <span>Formulário de contato</span>
+                </label>
+                <label class="checkbox-card">
+                  <input type="checkbox" id="estimate-copy" name="extras" value="copy">
+                  <span>Apoio com copy/textos</span>
+                </label>
+                <label class="checkbox-card">
+                  <input type="checkbox" id="estimate-visual" name="extras" value="visual">
+                  <span>Ajuste visual/identidade</span>
+                </label>
+                <label class="checkbox-card">
+                  <input type="checkbox" id="estimate-admin" name="extras" value="admin">
+                  <span>Painel ou área administrativa</span>
+                </label>
+              </div>
+
+              <label class="field">
+                <span>Descreva rapidamente o que você quer</span>
+                <textarea id="estimate-brief" name="brief" rows="5" placeholder="Ex.: preciso de um site para apresentar minha empresa, mostrar serviços e receber contatos no WhatsApp."></textarea>
+              </label>
+
+              <div class="estimate-actions">
+                <button class="button button-primary" type="button" id="estimate-calculate">Calcular estimativa</button>
+                <button class="button button-secondary" type="button" id="estimate-whatsapp">Enviar no WhatsApp</button>
+              </div>
+            </form>
+          </article>
+
+          <article class="panel estimate-result-card" id="estimate-result-card">
+            <div class="card-header">
+              <span class="section-tag">Resultado</span>
+              <h2>Sua média inicial aparece aqui.</h2>
+            </div>
+
+            <div class="estimate-result">
+              <small>Faixa estimada</small>
+              <strong id="estimate-range">R$ 0 a R$ 0</strong>
+              <p id="estimate-summary">
+                Selecione as opções ao lado para gerar uma estimativa inicial e seguir com a conversa já mais alinhada.
+              </p>
+            </div>
+
+            <div class="estimate-breakdown">
+              <div class="mini-card">
+                <strong id="estimate-type-label">Tipo do projeto</strong>
+                <span id="estimate-type-value">Ainda não definido</span>
+              </div>
+              <div class="mini-card">
+                <strong id="estimate-scope-label">Escopo base</strong>
+                <span id="estimate-scope-value">Preencha os campos para ver a faixa.</span>
+              </div>
+              <div class="mini-card">
+                <strong id="estimate-note-label">Observação</strong>
+                <span id="estimate-note-value">O valor final pode variar conforme complexidade e necessidades extras.</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="home-section fade" id="contato">
+        <div class="split-grid contact-split">
+          <article class="panel contact-card">
+            <div class="contact-copy">
+              <span class="section-tag">Vamos conversar</span>
+              <h2>Se você precisa colocar sua empresa no digital, podemos começar por aqui.</h2>
+              <p>
+                Estamos prontos para conversar sobre seu site, sua landing page
+                ou a melhor forma de apresentar sua empresa online.
+              </p>
+
+              <div class="contact-list contact-list-structured">
+                <div class="contact-item">
+                  <small>E-mail</small>
+                  <a href="mailto:tridevsolutions@gmail.com">tridevsolutions@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                  <small>WhatsApp</small>
+                  <a href="https://wa.me/5511999302690" target="_blank" rel="noreferrer">(11) 99930-2690</a>
+                </div>
+                <div class="contact-item">
+                  <small>Site</small>
+                  <span>tridevsolutions.com.br</span>
+                </div>
+                <div class="contact-item">
+                  <small>Localização</small>
+                  <span>São Paulo - SP</span>
+                </div>
+              </div>
+
+              <div class="contact-actions">
+                <button class="button button-whatsapp" type="button" onclick="whatsapp()">
+                  <span class="whatsapp-badge">WA</span>
+                  <span>Falar no WhatsApp</span>
+                </button>
+                <a class="button button-secondary" href="mailto:tridevsolutions@gmail.com">
+                  Enviar e-mail
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel page-card contact-note">
+            <div class="card-header">
+              <span class="section-tag">Próximo passo</span>
+              <h2>O que ajuda na primeira conversa.</h2>
+            </div>
+            <p class="contact-note-copy">
+              Se você já chegar com essas respostas, a conversa fica mais rápida, objetiva e produtiva.
+            </p>
+            <ul class="next-steps-list">
+              <li>
+                <span class="step-number">01</span>
+                <div>
+                  <strong>Tipo de projeto</strong>
+                  <p>Você precisa de site institucional, landing page ou consultoria?</p>
+                </div>
+              </li>
+              <li>
+                <span class="step-number">02</span>
+                <div>
+                  <strong>Objetivo principal</strong>
+                  <p>Qual é o resultado que essa página precisa gerar para sua empresa?</p>
+                </div>
+              </li>
+              <li>
+                <span class="step-number">03</span>
+                <div>
+                  <strong>Base existente</strong>
+                  <p>Já existe marca, conteúdo, referências ou alguma direção visual definida?</p>
+                </div>
+              </li>
+              <li>
+                <span class="step-number">04</span>
+                <div>
+                  <strong>Prazo</strong>
+                  <p>Existe campanha, lançamento ou alguma urgência que precise entrar no planejamento?</p>
+                </div>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer footer-rich fade">
+      <div class="footer-brand">
+        <img src="img/logo.png" alt="Logo TriDev Solutions">
+        <div>
+          <strong>TRIDEV SOLUTIONS</strong>
+          <p>Consultoria, criação de sites e estrutura digital com mais clareza.</p>
+        </div>
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-column">
+          <span>Navegação</span>
+          <a href="#inicio">Início</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#projetos-preview">Projetos</a>
+        </div>
+        <div class="footer-column">
+          <span>Páginas</span>
+          <a href="servicos.html">Serviços</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="projetos.html">Projetos</a>
+          <a href="contato.html">Contato</a>
+        </div>
+        <div class="footer-column">
+          <span>Contato</span>
+          <a href="mailto:tridevsolutions@gmail.com">tridevsolutions@gmail.com</a>
+          <a href="https://wa.me/5511999302690" target="_blank" rel="noreferrer">(11) 99930-2690</a>
+          <span>São Paulo - SP</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

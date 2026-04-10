@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Página de projetos da TriDev Solutions. Espaço preparado para apresentar os trabalhos da empresa."
+  >
+  <title>Projetos | TriDev Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Rajdhani:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="TriDev Solutions">
+        <img src="img/logo.png" alt="Logo TriDev Solutions">
+        <div class="brand-copy">
+          <strong>TRIDEV</strong>
+          <span>SOLUTIONS</span>
+        </div>
+      </a>
+
+      <nav class="menu" aria-label="Navegação principal">
+        <a class="menu-link" href="index.html">
+          <span class="menu-icon">&#8962;</span>
+          <span class="menu-text">Início</span>
+        </a>
+        <a class="menu-link" href="servicos.html">
+          <span class="menu-icon">&#9635;</span>
+          <span class="menu-text">Serviços</span>
+        </a>
+        <a class="menu-link" href="sobre.html">
+          <span class="menu-icon">&#9673;</span>
+          <span class="menu-text">Sobre</span>
+        </a>
+        <a class="menu-link is-active" href="projetos.html" aria-current="page">
+          <span class="menu-icon">&#10697;</span>
+          <span class="menu-text">Projetos</span>
+        </a>
+        <a class="menu-link" href="contato.html">
+          <span class="menu-icon">&#10022;</span>
+          <span class="menu-text">Contato</span>
+        </a>
+      </nav>
+    </header>
+
+    <main class="projects-page">
+      <section class="projects-hero panel fade">
+        <div class="projects-hero-copy">
+          <span class="eyebrow">Projetos</span>
+          <h1>Uma vitrine preparada para apresentar seus trabalhos com mais impacto visual.</h1>
+          <p>
+            Esta página foi reorganizada para parecer um portfólio real: destaque principal,
+            cards secundários e uma estrutura pronta para receber imagens, descrições, escopo e links.
+          </p>
+        </div>
+
+        <div class="projects-hero-side">
+          <div class="projects-stat">
+            <strong>Portfólio organizado</strong>
+            <span>Espaço pensado para destacar cada projeto sem parecer improvisado.</span>
+          </div>
+          <div class="projects-stat">
+            <strong>Pronto para preencher</strong>
+            <span>Quando você me mandar o material, eu substituo os placeholders pelos cases reais.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects-showcase fade">
+        <article class="panel featured-project">
+          <div class="featured-visual">
+            <img class="featured-visual-image" src="img/seuPizza.png" alt="Preview do projeto SeuPizza">
+            <span class="project-label">Projeto em destaque</span>
+            <div class="featured-visual-copy">
+              <small>Site comercial</small>
+              <strong>SeuPizza</strong>
+            </div>
+          </div>
+
+          <div class="featured-content">
+            <div class="card-header">
+              <span class="section-tag">Case principal</span>
+              <h2>SeuPizza</h2>
+            </div>
+            <p>
+              Um site comercial para pizzaria com destaque para cardápio, promoções e uma presença visual mais
+              chamativa para reforçar a marca e atrair o público logo no primeiro acesso.
+            </p>
+            <ul class="project-meta">
+              <li>Tipo: Site comercial</li>
+              <li>Escopo: Design + desenvolvimento</li>
+              <li>Status: Publicado</li>
+            </ul>
+            <div class="project-actions">
+              <a class="project-link" href="https://mukamarcondes.github.io/seuPizza/" target="_blank" rel="noreferrer">Ver projeto online</a>
+            </div>
+          </div>
+        </article>
+
+        <div class="projects-grid projects-grid-secondary">
+          <article class="panel project-placeholder fade">
+            <div class="project-thumb">
+              <img class="project-thumb-image" src="img/gerenciadorAdega.png" alt="Preview do projeto Gerenciador Adega">
+              <span class="project-label">Projeto 02</span>
+              <div class="project-thumb-copy">
+                <small>Sistema web</small>
+                <strong>Gerenciador Adega</strong>
+              </div>
+            </div>
+            <div class="project-content">
+              <h2>Gerenciador Adega</h2>
+              <p>Sistema com operação centralizada para caixa, vendas, estoque, relatórios e gestão da rotina da loja.</p>
+            </div>
+            <ul class="project-meta">
+              <li>Tipo: Sistema web</li>
+              <li>Escopo: Gestão + operação</li>
+              <li>Status: Publicado</li>
+            </ul>
+            <div class="project-actions">
+              <a class="project-link" href="https://gerenciador-adega.vercel.app/" target="_blank" rel="noreferrer">Ver projeto online</a>
+            </div>
+          </article>
+
+          <article class="panel project-placeholder fade">
+            <div class="project-thumb">
+              <img class="project-thumb-image" src="img/gerenciadorNumber.png" alt="Preview do projeto Gerenciador de Números">
+              <span class="project-label">Projeto 03</span>
+              <div class="project-thumb-copy">
+                <small>Ferramenta digital</small>
+                <strong>Gerenciador de Números</strong>
+              </div>
+            </div>
+            <div class="project-content">
+              <h2>Gerenciador de Números</h2>
+              <p>Projeto com foco em dashboards, números disponíveis e usados, auditoria e visão financeira em um painel executivo.</p>
+            </div>
+            <ul class="project-meta">
+              <li>Tipo: Sistema web</li>
+              <li>Escopo: Dashboard + gestão</li>
+              <li>Status: Publicado</li>
+            </ul>
+            <div class="project-actions">
+              <a class="project-link" href="https://mukamarcondes.github.io/gerenciador3/" target="_blank" rel="noreferrer">Ver projeto online</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="projects-helper fade">
+        <article class="panel wide-card">
+          <div class="card-header">
+            <span class="section-tag">Portfólio em expansão</span>
+            <h2>Essa vitrine já está pronta para receber novos cases conforme a TriDev for crescendo.</h2>
+          </div>
+          <div class="helper-grid">
+            <div class="mini-card">
+              <strong>Novos segmentos</strong>
+              <span>Podem entrar projetos institucionais, landing pages, sistemas e sites comerciais.</span>
+            </div>
+            <div class="mini-card">
+              <strong>Mais contexto</strong>
+              <span>Depois dá para incluir objetivo do cliente, solução aplicada e detalhes do escopo.</span>
+            </div>
+            <div class="mini-card">
+              <strong>Mais prova visual</strong>
+              <span>Também podemos trocar essas capas por prints e mockups reais para valorizar cada entrega.</span>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer fade">
+      <p>Três sócios. Um começo. Soluções com propósito.</p>
+      <small>© 2026 TriDev Solutions. Todos os direitos reservados.</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
